@@ -25,6 +25,7 @@
         </activity>
         <activity android:name=".EditProfile" />
         <activity android:name=".registration" />
+        <activity android:name=".ExerciseActivity"></activity>
         <activity android:name=".home" />
         <activity
             android:name=".spaghetti_squash"

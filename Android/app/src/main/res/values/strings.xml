@@ -12,6 +12,7 @@
     <string name="permission_rationale">"Contacts permissions are needed for providing email
         completions."
     </string>
+    <string name="title_activity_exercise">ExerciseActivity</string>
     <string name="title_activity_spaghetti_squash">spaghetti_squash</string>
     <string name="title_activity_food__selection">Food_Selection</string>
     <string name="title_activity_calendar">Calendar</string>
