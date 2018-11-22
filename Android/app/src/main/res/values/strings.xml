@@ -15,4 +15,5 @@
     <string name="title_activity_spaghetti_squash">spaghetti_squash</string>
     <string name="title_activity_food__selection">Food_Selection</string>
     <string name="title_activity_calendar">Calendar</string>
+    <string name="title_activity_soba_noodles">soba_noodles</string>
 </resources>
