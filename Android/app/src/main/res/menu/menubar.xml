@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/profile_option"
+        android:title="Prototype" />
+    <item
+        android:id="@+id/meals_option"
+        android:title="Meals" />
+    <item
+        android:id="@+id/calender_option"
+        android:title="Calender" />
+    <item
+        android:id="@+id/workouts_option"
+        android:title="Workouts" />
+    <item
+        android:id="@+id/logout_option"
+        android:title="Logout" />
+</menu>
