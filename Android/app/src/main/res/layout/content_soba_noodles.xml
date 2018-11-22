@@ -16,7 +16,7 @@
         android:layout_marginTop="8dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@drawable/spaghet" />
+        tools:srcCompat="@drawable/soba" />
 
     <TextView
         android:id="@+id/textView11"
@@ -64,7 +64,7 @@
         android:editable="false"
         android:ems="10"
         android:inputType="textMultiLine"
-        android:text="A healthy alternative to spaghetti, easy and quick to make, and can be nicely seasoned quite easily."
+        android:text="A healthy choice for noodles with a rich variety of flavours. A nice light meal to end a routine"
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView5"
         app:layout_constraintEnd_toEndOf="parent"
@@ -81,7 +81,7 @@
         android:editable="false"
         android:ems="10"
         android:inputType="textMultiLine"
-        android:text="1. Heat up oven to 400F \n2. Cut the squash in half length-wise \n3. Scoop out all of the seeds and stringy parts \n4. Coat the inside with oil and salt accordingly \n5. Cook for 40 minutes \n6. Take the squash out and scrape out the stringy spaghetti left"
+        android:text="1. Prepare Sauce combining the Soya Sauce, Sesame Oil, Vinegar, and Garlic \n2. Boil a pot of water and cook the noodles based on the Instructions on the package \n3. Turn off Heat, Remove and Drain Noodles \n4. Combine sauce and noodles"
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="@+id/editText13"
         app:layout_constraintStart_toStartOf="@+id/textView13"
@@ -97,9 +97,22 @@
         android:editable="false"
         android:ems="10"
         android:inputType="textMultiLine"
-        android:text="1 Spaghetti Squash \n1 Tablespoon oil \n1 Pinch of Sea Salt"
+        android:text="1. 8oz Soba Noodles \n2. 1/4 Cup of Soya Sauce \n3. 2 Tablespoons of Sesame Oil \n4. 1 Tablespoon of Wine Vinegar \n5. 3 Diced Green Onions \n6. 2 Gloves of Garlic"
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="@+id/editText11"
         app:layout_constraintStart_toStartOf="@+id/textView12"
         app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="https://www.thissavoryvegan.com/simple-sesame-ginger-soba-noodles/"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 </android.support.constraint.ConstraintLayout>
