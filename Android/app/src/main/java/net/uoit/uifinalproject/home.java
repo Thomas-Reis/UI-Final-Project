@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -46,9 +47,26 @@ public class home extends AppCompatActivity {
 
             final View routine = inflater.inflate(R.layout.routine_card, null);
 
-            TextView name_field =  routine.findViewById(R.id.rou_name);
+            TextView name_field =  routine.findViewById(R.id.routine_name);
 
             name_field.setText(name);
+
+            routine.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    View expand_items = routine.findViewById(R.id.expand_items);
+                    ImageView arrow = routine.findViewById(R.id.expand_arrow);
+
+                    if (expand_items.getVisibility() == View.GONE){
+                        expand_items.setVisibility(View.VISIBLE);
+                        arrow.setImageResource(android.R.drawable.arrow_up_float);
+                    }
+                    else {
+                        expand_items.setVisibility(View.GONE);
+                        arrow.setImageResource(android.R.drawable.arrow_down_float);
+                    }
+                }
+            });
 
             rou_list.addView(routine, rou_list.getChildCount() - 1);
         }
