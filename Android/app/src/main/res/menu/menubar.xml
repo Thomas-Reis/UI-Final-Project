@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
         android:id="@+id/profile_option"
-        android:title="Prototype" />
+        android:title="Profile" />
     <item
         android:id="@+id/meals_option"
         android:title="Meals" />
@@ -19,6 +19,5 @@
     <item
         app:showAsAction="always"
         android:title="Calender"
-        android:icon="@android:drawable/ic_menu_my_calendar"/>
-
+        android:icon="@drawable/calendar_icon"/>
 </menu>

@@ -47,7 +47,7 @@
         <activity
             android:name=".soba_noodles"
             android:label="@string/title_activity_soba_noodles"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar"/>
     </application>
 
 </manifest>

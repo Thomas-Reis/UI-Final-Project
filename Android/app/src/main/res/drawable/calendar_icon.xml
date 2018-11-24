@@ -7,7 +7,7 @@
 
     <path
         android:strokeColor="#ffffffff"
-        android:strokeWidth="1"
+        android:strokeWidth="3"
         android:pathData="M10 10 L10 10, 90 10, 90 90, 10 90z"/>
 
     <path
@@ -18,52 +18,8 @@
 
     <path
         android:strokeColor="#ffff"
-        android:strokeWidth="0.8"
-        android:pathData="M10 42 L90 42"/>
+        android:strokeWidth="1"
+        android:pathData="M20 80 L20 80, 20 50, 32 80, 32 50 M42 50 L42 50, 42 80, 52 80, 52 50z M62 50 L62 50, 68 80, 74 50"/>
 
-    <path
-        android:strokeColor="#ffff"
-        android:strokeWidth="0.8"
-        android:pathData="M10 54 L90 54"/>
-
-    <path
-        android:strokeColor="#ffff"
-        android:strokeWidth="0.8"
-        android:pathData="M10 66 L90 66"/>
-
-    <path
-        android:strokeColor="#ffff"
-        android:strokeWidth="0.8"
-        android:pathData="M10 78 L90 78"/>
-
-    <path
-        android:strokeColor="#ffff"
-        android:strokeWidth="0.8"
-        android:pathData="M21.43 42 L21.43 90"/>
-
-    <path
-        android:strokeColor="#ffff"
-        android:strokeWidth="0.8"
-        android:pathData="M32.86 42 L32.86 90"/>
-
-    <path
-        android:strokeColor="#ffff"
-        android:strokeWidth="0.8"
-        android:pathData="M44.29 42 L44.29 90"/>
-
-    <path
-        android:strokeColor="#ffff"
-        android:strokeWidth="0.8"
-        android:pathData="M55.72 42 L55.72 90"/>
-
-    <path
-        android:strokeColor="#ffff"
-        android:strokeWidth="0.8"
-        android:pathData="M67.15 42 L67.15 90"/>
-
-    <path
-        android:strokeColor="#ffff"
-        android:strokeWidth="0.8"
-        android:pathData="M78.58 42 L78.58 90"/>
 
 </vector>
