@@ -15,6 +15,7 @@ public class spaghetti_squash extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_spaghetti_squash);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        toolbar.setTitle("UIFinalProject");
         setSupportActionBar(toolbar);
     }
 

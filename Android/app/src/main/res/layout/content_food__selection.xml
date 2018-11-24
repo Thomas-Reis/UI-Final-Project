@@ -18,7 +18,8 @@
         app:layout_constraintTop_toBottomOf="@+id/spaghetti_squash_card">
 
         <ImageView
-            android:id="@+id/imageView3"
+            android:id="@+id/soba_noodles_image"
+            android:onClick="food_pressed"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_marginStart="8dp"
@@ -39,8 +40,8 @@
             android:layout_marginTop="8dp"
             android:text="Soba Noodles"
             android:textSize="24sp"
-            app:layout_constraintStart_toEndOf="@+id/imageView3"
-            app:layout_constraintTop_toTopOf="@+id/imageView3" />
+            app:layout_constraintStart_toEndOf="@+id/soba_noodles_image"
+            app:layout_constraintTop_toTopOf="@+id/soba_noodles_image" />
 
         <EditText
             android:id="@+id/editText7"
@@ -118,7 +119,8 @@
         app:layout_constraintTop_toBottomOf="@+id/textView3">
 
         <ImageView
-            android:id="@+id/imageView2"
+            android:id="@+id/spaghetti_squash_image"
+            android:onClick="food_pressed"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_marginStart="8dp"
@@ -141,8 +143,8 @@
             android:textSize="24sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toEndOf="@+id/imageView2"
-            app:layout_constraintTop_toTopOf="@+id/imageView2" />
+            app:layout_constraintStart_toEndOf="@+id/spaghetti_squash_image"
+            app:layout_constraintTop_toTopOf="@+id/spaghetti_squash_image" />
 
         <EditText
             android:id="@+id/editText6"

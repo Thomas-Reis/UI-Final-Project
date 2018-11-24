@@ -7,6 +7,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
 
 public class Food_Selection extends AppCompatActivity {
 
@@ -15,6 +16,7 @@ public class Food_Selection extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_food__selection);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        toolbar.setTitle("UIFinalProject");
         setSupportActionBar(toolbar);
     }
 
@@ -50,6 +52,19 @@ public class Food_Selection extends AppCompatActivity {
                 return true;
             default:
                 return super.onOptionsItemSelected(item);
+        }
+    }
+
+    public void food_pressed(View v) {
+        Intent intent = null;
+        switch (v.getId()) {
+            case R.id.soba_noodles_image:
+                intent = new Intent(this, soba_noodles.class);
+            case R.id.spaghetti_squash_image:
+                intent = new Intent(this, spaghetti_squash.class);
+        }
+        if (intent != null) {
+            startActivity(intent);
         }
     }
 }
