@@ -87,7 +87,6 @@
                 android:layout_marginStart="16dp"
                 android:text="Delete"/>
 
-
         </RelativeLayout>
 
         <ImageView
@@ -96,7 +95,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:src="@android:drawable/arrow_down_float" />
-
     </LinearLayout>
 
 </android.support.v7.widget.CardView>
