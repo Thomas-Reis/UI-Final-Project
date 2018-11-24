@@ -27,7 +27,7 @@ public class home extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.menubar, menu);
+        inflater.inflate(R.menu.menubar_homepage, menu);
         return super.onCreateOptionsMenu(menu);
     }
 
@@ -49,6 +49,10 @@ public class home extends AppCompatActivity {
             case R.id.logout_option:
                 Intent login_intent = new Intent(this, LoginActivity.class);
                 startActivity(login_intent);
+                return true;
+            case R.id.qr_code_option:
+                Intent qr_intent = new Intent(this, QRCode.class);
+                startActivity(qr_intent);
                 return true;
             default:
                 return super.onOptionsItemSelected(item);

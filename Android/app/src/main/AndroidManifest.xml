@@ -23,13 +23,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".create_routine"/>
+        <activity android:name=".create_routine" />
         <activity android:name=".EditProfile" />
         <activity android:name=".registration" />
-        <activity android:name=".ExerciseActivity"/>
+        <activity android:name=".ExerciseActivity" />
         <activity android:name=".home">
             <intent-filter>
-                <action android:name="android.intent.action.VIEW"/>
+                <action android:name="android.intent.action.VIEW" />
             </intent-filter>
         </activity>
         <activity
@@ -47,7 +47,9 @@
         <activity
             android:name=".soba_noodles"
             android:label="@string/title_activity_soba_noodles"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".QRCode" />
+        <activity android:name=".QRCodeResults"></activity>
     </application>
 
 </manifest>

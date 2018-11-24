@@ -18,7 +18,7 @@ public class EditProfile extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.menubar_alt, menu);
+        inflater.inflate(R.menu.menubar_default, menu);
         return super.onCreateOptionsMenu(menu);
     }
 
