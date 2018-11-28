@@ -11,7 +11,7 @@
         android:id="@+id/new_routine_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="New Routine" />
+        android:text="@string/new_routine" />
 
     <ScrollView
         android:layout_width="match_parent"

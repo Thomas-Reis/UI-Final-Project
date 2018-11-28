@@ -42,7 +42,8 @@ public class Calendar extends AppCompatActivity {
                 return true;
             case R.id.home_big_option:
                 Intent workouts_intent = new Intent(this, home.class);
-                startActivity(workouts_intent);
+                //startActivity(workouts_intent);
+                finish();
                 return true;
             case R.id.logout_option:
                 Intent login_intent = new Intent(this, LoginActivity.class);

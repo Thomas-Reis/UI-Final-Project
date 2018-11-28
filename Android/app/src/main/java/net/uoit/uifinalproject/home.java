@@ -47,8 +47,9 @@ public class home extends AppCompatActivity {
                 startActivity(calendar_intent);
                 return true;
             case R.id.logout_option:
-                Intent login_intent = new Intent(this, LoginActivity.class);
-                startActivity(login_intent);
+                //Intent login_intent = new Intent(this, LoginActivity.class);
+                //startActivity(login_intent);
+                finish();
                 return true;
             case R.id.qr_code_option:
                 Intent qr_intent = new Intent(this, QRCode.class);
@@ -111,6 +112,24 @@ public class home extends AppCompatActivity {
 
             routine.setPadding(0, 8, 0,0);
             rou_list.addView(routine, rou_list.getChildCount() - 1);
+
+            Button delete =  routine.findViewById(R.id.delete_btn);
+            delete.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    routine.setVisibility(View.GONE);
+                }
+            });
+
+            Button edit =  routine.findViewById(R.id.edit_btn);
+            edit.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+
+                    ((TextView)routine.findViewById(R.id.routine_name)).setText("todo");
+                }
+            });
+
         }
     }
 }

@@ -54,10 +54,14 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(LoginActivity.this, home.class));
-                finish();
+                //finish();
+                ((TextView)findViewById(R.id.email)).setText("");
+                ((TextView)findViewById(R.id.password)).setText("");
             }
         });
-
+    }
+    public void exit(View v){
+        finish();
     }
 }
 

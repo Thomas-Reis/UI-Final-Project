@@ -17,4 +17,10 @@
     <string name="title_activity_food__selection">Food_Selection</string>
     <string name="title_activity_calendar">Calendar</string>
     <string name="title_activity_soba_noodles">soba_noodles</string>
+    <string name="exit">exit</string>
+    <string name="new_routine">New Routine</string>
+    <string name="delete">Delete</string>
+    <string name="arrow">arrow</string>
+    <string name="edit">Edit</string>
+    <string name="start">Start</string>
 </resources>
