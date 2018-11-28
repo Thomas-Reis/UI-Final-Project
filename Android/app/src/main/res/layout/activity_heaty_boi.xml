@@ -9,7 +9,7 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/heatmapboi"/>
+        android:src="@drawable/heat_map_boi"/>
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/exercise_FAB"
