@@ -61,8 +61,6 @@ public class HeatyBoi extends AppCompatActivity {
         FAB.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(HeatyBoi.this, ViewRoutineActivity.class);
-                startActivity(intent);
                 finish();
             }
         });
