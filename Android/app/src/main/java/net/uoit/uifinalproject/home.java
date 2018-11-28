@@ -142,6 +142,7 @@ public class home extends AppCompatActivity {
                 }
             }
         });
+
         routine.setElevation(8);
         rou_list.addView(routine, rou_list.getChildCount() - 1);
     }
