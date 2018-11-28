@@ -51,8 +51,8 @@
         <activity android:name=".QRCode" />
         <activity android:name=".QRCodeResults" />
         <activity android:name=".EditRoutineActivity" />
-        <activity android:name=".ViewRoutineActivity" />
         <activity android:name=".HeatyBoi" />
+        <activity android:name=".ViewRoutineActivity" />
 
     </application>
 
