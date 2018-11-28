@@ -8,16 +8,16 @@
         android:id="@+id/meals_option"
         android:title="Meals" />
     <item
-        android:id="@+id/calender_option"
-        android:title="Calender" />
-    <item
-        android:id="@+id/workouts_option"
-        android:title="Workouts" />
-    <item
         android:id="@+id/logout_option"
         android:title="Logout" />
     <item
+        android:id="@+id/calendar_big_option"
         app:showAsAction="always"
         android:title="Calender"
-        android:icon="@drawable/calendar_icon"/>
+        android:icon="@drawable/calendar_icon" />
+    <item
+        android:id="@+id/qr_code_option"
+        app:showAsAction="always"
+        android:title="Scan QR code"
+        android:icon="@drawable/qr_code_icon" />
 </menu>
