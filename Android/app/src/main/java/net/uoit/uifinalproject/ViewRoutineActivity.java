@@ -2,6 +2,7 @@ package net.uoit.uifinalproject;
 
 import android.content.Context;
 import android.content.Intent;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -17,12 +18,20 @@ public class ViewRoutineActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_edit_routine);
+        setContentView(R.layout.activity_view_routine);
         newExerciseConfig();
+        heatmapStart();
     }
 
-    public void heatmapStart(View v) {
-        Intent heat_intent = new Intent(ViewRoutineActivity.this, HeatyBoi.class);
+    void heatmapStart() {
+        FloatingActionButton FAB = (FloatingActionButton) findViewById(R.id.haet_boi_FAB);
+        FAB.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent heat_intent = new Intent(ViewRoutineActivity.this, HeatyBoi.class);
+                startActivity(heat_intent);
+            }
+        });
     }
 
     void newExerciseConfig(){
