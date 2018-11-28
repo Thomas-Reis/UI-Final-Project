@@ -22,7 +22,7 @@ public class ViewRoutineActivity extends AppCompatActivity {
     }
 
     public void heatmapStart(View v) {
-        Intent heat_intent = new Intent(ViewRoutineActivity.this, heatyBoi.class);
+        Intent heat_intent = new Intent(ViewRoutineActivity.this, HeatyBoi.class);
     }
 
     void newExerciseConfig(){
