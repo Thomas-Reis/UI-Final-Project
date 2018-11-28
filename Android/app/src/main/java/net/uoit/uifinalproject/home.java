@@ -126,6 +126,25 @@ public class home extends AppCompatActivity {
 
         name_field.setText(name);
 
+        routine.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                View expand_items = routine.findViewById(R.id.expand_items);
+                ImageView breakln = routine.findViewById(R.id.divider_line);
+                ImageView arrow = routine.findViewById(R.id.expand_arrow);
+
+                if (expand_items.getVisibility() == View.GONE){
+                    expand_items.setVisibility(View.VISIBLE);
+                    breakln.setVisibility(View.VISIBLE);
+                    arrow.setImageResource(android.R.drawable.arrow_up_float);
+                }
+                else {
+                    expand_items.setVisibility(View.GONE);
+                    breakln.setVisibility(View.GONE);
+                    arrow.setImageResource(android.R.drawable.arrow_down_float);
+                }
+            }
+        });
         routine.setElevation(8);
 
         return routine;
