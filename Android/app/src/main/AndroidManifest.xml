@@ -47,9 +47,11 @@
         <activity
             android:name=".soba_noodles"
             android:label="@string/title_activity_soba_noodles"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme.NoActionBar"/>
+
         <activity android:name=".QRCode" />
-        <activity android:name=".QRCodeResults"></activity>
+        <activity android:name=".QRCodeResults" />
+
     </application>
 
 </manifest>

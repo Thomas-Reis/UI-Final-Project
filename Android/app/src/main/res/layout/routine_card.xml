@@ -6,10 +6,12 @@
     android:elevation="8dp">
 
     <LinearLayout
+        android:outlineProvider="paddedBounds"
         android:layout_marginTop="8dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/card_back"
+        android:elevation="8dp"
         android:orientation="vertical">
 
         <RelativeLayout

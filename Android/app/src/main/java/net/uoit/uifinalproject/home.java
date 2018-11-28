@@ -22,6 +22,8 @@ public class home extends AppCompatActivity {
         setContentView(R.layout.activity_home);
 
         newRoutineConfig();
+        addRoutine("Arm Day");
+        addRoutine("Leg Day");
     }
 
     @Override
@@ -72,13 +74,52 @@ public class home extends AppCompatActivity {
         });
     }
 
+    void addRoutine(String name){
+        LinearLayout rou_list = findViewById(R.id.routine_list);
+        final LayoutInflater inflater = (LayoutInflater) getApplicationContext()
+                .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+
+        final View routine = inflater.inflate(R.layout.routine_card, null);
+
+        TextView name_field =  routine.findViewById(R.id.routine_name);
+
+        name_field.setText(name);
+
+        routine.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                View expand_items = routine.findViewById(R.id.expand_items);
+                ImageView breakln = routine.findViewById(R.id.divider_line);
+                ImageView arrow = routine.findViewById(R.id.expand_arrow);
+
+                if (expand_items.getVisibility() == View.GONE){
+                    expand_items.setVisibility(View.VISIBLE);
+                    breakln.setVisibility(View.VISIBLE);
+                    arrow.setImageResource(android.R.drawable.arrow_up_float);
+                }
+                else {
+                    expand_items.setVisibility(View.GONE);
+                    breakln.setVisibility(View.GONE);
+                    arrow.setImageResource(android.R.drawable.arrow_down_float);
+                }
+            }
+        });
+
+        routine.setElevation(8);
+        rou_list.addView(routine, rou_list.getChildCount() - 1);
+
+    }
+
     @Override
     protected void onActivityResult(int request_code, int result_code, Intent data){
-        LinearLayout rou_list = findViewById(R.id.routine_list);
         if (request_code == 1){
             if(result_code == RESULT_CANCELED){
                 return;
             }
+            else {
+                addRoutine(data.getStringExtra("ROUTINE_NAME"));
+            }
+          
             final LayoutInflater inflater = (LayoutInflater) getApplicationContext()
                     .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 
@@ -129,7 +170,6 @@ public class home extends AppCompatActivity {
                     ((TextView)routine.findViewById(R.id.routine_name)).setText("todo");
                 }
             });
-
         }
     }
 }
