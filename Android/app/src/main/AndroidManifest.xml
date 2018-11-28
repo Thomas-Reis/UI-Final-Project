@@ -51,6 +51,7 @@
 
         <activity android:name=".QRCode" />
         <activity android:name=".QRCodeResults" />
+        <activity android:name=".EditRoutineActivity" />
 
     </application>
 

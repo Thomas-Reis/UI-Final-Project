@@ -74,7 +74,7 @@ public class home extends AppCompatActivity {
         });
     }
 
-    View addRoutine(String name){
+    void addRoutine(String name){
         LinearLayout rou_list = findViewById(R.id.routine_list);
         final LayoutInflater inflater = (LayoutInflater) getApplicationContext()
                 .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
@@ -105,7 +105,6 @@ public class home extends AppCompatActivity {
         });
 
         routine.setPadding(0, 8, 0, 0);
-        rou_list.addView(routine, rou_list.getChildCount() - 1);
 
         Button delete = routine.findViewById(R.id.delete_btn);
         delete.setOnClickListener(new View.OnClickListener() {
@@ -119,12 +118,10 @@ public class home extends AppCompatActivity {
         edit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                ((TextView) routine.findViewById(R.id.routine_name)).setText("todo");
+                Intent edit_routine = new Intent(home.this, EditRoutineActivity.class);
+                startActivity(edit_routine);
             }
         });
-
-        name_field.setText(name);
 
         routine.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -146,8 +143,7 @@ public class home extends AppCompatActivity {
             }
         });
         routine.setElevation(8);
-
-        return routine;
+        rou_list.addView(routine, rou_list.getChildCount() - 1);
     }
 
     @Override
@@ -159,8 +155,7 @@ public class home extends AppCompatActivity {
             }
             else {
                 String name = data.getStringExtra("ROUTINE_NAME");
-                View routine = addRoutine(name);
-                rou_list.addView(routine, rou_list.getChildCount() - 1);
+                addRoutine(name);
             }
         }
     }
