@@ -114,6 +114,15 @@ public class home extends AppCompatActivity {
             }
         });
 
+        final Button start = routine.findViewById(R.id.start_btn);
+        start.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent start_activity = new Intent(home.this, ViewRoutineActivity.class);
+                startActivity(start_activity);
+            }
+        });
+
         Button edit = routine.findViewById(R.id.edit_btn);
         edit.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -123,33 +132,12 @@ public class home extends AppCompatActivity {
             }
         });
 
-        routine.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                View expand_items = routine.findViewById(R.id.expand_items);
-                ImageView breakln = routine.findViewById(R.id.divider_line);
-                ImageView arrow = routine.findViewById(R.id.expand_arrow);
-
-                if (expand_items.getVisibility() == View.GONE){
-                    expand_items.setVisibility(View.VISIBLE);
-                    breakln.setVisibility(View.VISIBLE);
-                    arrow.setImageResource(android.R.drawable.arrow_up_float);
-                }
-                else {
-                    expand_items.setVisibility(View.GONE);
-                    breakln.setVisibility(View.GONE);
-                    arrow.setImageResource(android.R.drawable.arrow_down_float);
-                }
-            }
-        });
-
         routine.setElevation(8);
         rou_list.addView(routine, rou_list.getChildCount() - 1);
     }
 
     @Override
     protected void onActivityResult(int request_code, int result_code, Intent data){
-        LinearLayout rou_list = findViewById(R.id.routine_list);
         if (request_code == 1){
             if(result_code == RESULT_CANCELED){
                 return;
