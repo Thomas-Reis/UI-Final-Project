@@ -50,7 +50,9 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".QRCode" />
         <activity android:name=".QRCodeResults" />
+        <activity android:name=".EditRoutineActivity" />
         <activity android:name=".HeatyBoi"></activity>
+
     </application>
 
 </manifest>
