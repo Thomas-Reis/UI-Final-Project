@@ -104,7 +104,22 @@ public class home extends AppCompatActivity {
                 }
             }
         });
+        Button delete =  routine.findViewById(R.id.delete_btn);
+        delete.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                routine.setVisibility(View.GONE);
+            }
+        });
 
+        Button edit =  routine.findViewById(R.id.edit_btn);
+        edit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                ((TextView)routine.findViewById(R.id.routine_name)).setText("todo");
+            }
+        });
         routine.setElevation(8);
         rou_list.addView(routine, rou_list.getChildCount() - 1);
 
@@ -150,26 +165,10 @@ public class home extends AppCompatActivity {
                     }
                 }
             });
+            LinearLayout rou_list = findViewById(R.id.routine_list);
 
             routine.setPadding(0, 8, 0,0);
             rou_list.addView(routine, rou_list.getChildCount() - 1);
-
-            Button delete =  routine.findViewById(R.id.delete_btn);
-            delete.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    routine.setVisibility(View.GONE);
-                }
-            });
-
-            Button edit =  routine.findViewById(R.id.edit_btn);
-            edit.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-
-                    ((TextView)routine.findViewById(R.id.routine_name)).setText("todo");
-                }
-            });
         }
     }
 }
